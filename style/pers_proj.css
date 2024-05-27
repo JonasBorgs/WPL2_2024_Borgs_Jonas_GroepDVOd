@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+main{
+    max-width: 1512px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-image: url("/assets/portfolio_achtergrond_donker.png");
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+body{
+    background-color: #151515;
+}
+main h1{
+    font-size: 84px;
+    color: #ffffff;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+}
+span{
+    color: #FC033F;
+}
+main #main_art_proj{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+main img{
+    width: 70%;
+    border: none;
+    padding: 2rem 3rem 4rem 3rem;
+}
+main #main_art_div_tekst{
+    width: 30%;
+    color: #ffffff;
+    padding: 2rem 3rem;
+    font-size: 18px;
+}
+main #main_art_div_uitleg_proj a{
+    color: #FC033F;
+    text-decoration: none;
+}
+main #main_art_div_uitleg_proj a:hover{
+    text-decoration: underline;
+}
+main #main_art_div_p{
+    font-size: 12px;
+    padding-top: 15px;
+}
+main #main_art_div_p_via{
+    font-size: 12px;
+    padding-top: 5px;
+}
+main #main_art_div_knop a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+}
+main #main_art_div_knop a:hover{
+    text-decoration: underline;
+}
+main #main_art_div_knop{
+    background-color: #FC033F;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    width: 11rem;
+    position: relative;
+    top: 1.5rem;
+    left: 11.5rem;
+}
+@media screen and (max-width: 834px)  {
+    main h1{
+        font-size: 50px
+    }
+    main #main_art_proj{
+        flex-direction: column;
+    }
+    main img{
+        order: 2;
+        width: 100%;
+    }
+    main #main_art_div_tekst{
+        order: 1;
+        width: 100%;
+    }
+    main #main_art_div_knop{
+        position: relative;
+        top: 0.5rem;
+        left: 32.5rem;
+    }
+}
+@media screen and (max-width: 414px)  {
+    main h1{
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    main #main_art_proj{
+        flex-direction: column;
+    }
+    main img{
+        order: 2;
+        width: 100%;
+    }
+    main #main_art_div_tekst{
+        order: 1;
+        width: 100%;
+        font-size: 12px;
+    }
+    main #main_art_div_p{
+        font-size: 8px;
+    }
+    main #main_art_div_p_via{
+        font-size: 8px;
+    }
+    main #main_art_div_knop{
+        position: relative;
+        top: 1.5rem;
+        left: 10rem;
+        width: 8rem;
+    }
+    main #main_art_div_knop a{
+        font-size: 11px;
+    }
+}
